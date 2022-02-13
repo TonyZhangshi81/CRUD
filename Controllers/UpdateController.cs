@@ -41,7 +41,7 @@ namespace CRUD.Controllers
 
         private void DisplayResult<T>(T info)
         {
-            ViewData["result"] = JsonConvert.SerializeObject(info);
+            ViewBag.Result = JsonConvert.SerializeObject(info);
         }
 
         public async Task<IActionResult> UpdateSingle2()
